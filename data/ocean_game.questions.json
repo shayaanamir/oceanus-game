@@ -1,0 +1,160 @@
+[{
+  "_id": {
+	"$oid": "66da46109cc81f17a9d83c79"
+  },
+  "sr_no": 1,
+  "ocean_id": 1,
+  "question_text": "Which of the following is not a major cause of ocean pollution?",
+  "answers": [
+	"A) Oil spills",
+	"B) Fertilizer runoff",
+	"C) Greenhouse gases",
+	"D) Deforestation"
+  ],
+  "correct_answer": "D",
+  "explanation": "Deforestation does not directly pollute the ocean, but it can contribute to other forms of pollution, such as soil erosion and air pollution, which can ultimately end up in the ocean."
+},
+{
+  "_id": {
+	"$oid": "66da46109cc81f17a9d83c7a"
+  },
+  "sr_no": 2,
+  "ocean_id": 1,
+  "question_text": "Which of the following is the leading cause of death for marine life?",
+  "answers": [
+	"A) Plastic pollution",
+	"B) Climate change",
+	"C) Overfishing",
+	"D) Oil spills"
+  ],
+  "correct_answer": "B",
+  "explanation": "Climate change is causing the ocean to become warmer and more acidic, which is making it difficult for marine life to survive."
+},
+{
+  "_id": {
+	"$oid": "66da46109cc81f17a9d83c7b"
+  },
+  "sr_no": 3,
+  "ocean_id": 1,
+  "question_text": "Which of the following is not a type of marine debris?",
+  "answers": [
+	"A) Plastic bags",
+	"B) Fishing nets",
+	"C) Oil spills",
+	"D) Greenhouse gases"
+  ],
+  "correct_answer": "D",
+  "explanation": "Greenhouse gases are not a type of marine debris, but they can contribute to ocean pollution by causing the ocean to become warmer and more acidic."
+},
+{
+  "_id": {
+	"$oid": "66da46109cc81f17a9d83c7c"
+  },
+  "sr_no": 4,
+  "ocean_id": 1,
+  "question_text": "Which of the following is the most effective way to reduce ocean pollution?",
+  "answers": [
+	"A) Reduce our use of plastics",
+	"B) Invest in renewable energy",
+	"C) Protect marine habitats",
+	"D) All of the above"
+  ],
+  "correct_answer": "D",
+  "explanation": "Reducing our use of plastics, investing in renewable energy, and protecting marine habitats are all effective ways to reduce ocean pollution."
+},
+{
+  "_id": {
+	"$oid": "66da46109cc81f17a9d83c7d"
+  },
+  "sr_no": 5,
+  "ocean_id": 1,
+  "question_text": "Which of the following countries produces the most ocean plastic pollution?",
+  "answers": [
+	"A) China",
+	"B) Indonesia",
+	"C) India",
+	"D) the United States"
+  ],
+  "correct_answer": "A",
+  "explanation": "China produces the most ocean plastic pollution, followed by Indonesia, India, and the United States."
+},
+{
+  "_id": {
+	"$oid": "66da46109cc81f17a9d83c7e"
+  },
+  "sr_no": 6,
+  "ocean_id": 1,
+  "question_text": "Which of the following is not a threat to coral reefs?",
+  "answers": [
+	"A) Climate change",
+	"B) Overfishing",
+	"C) Ocean acidification",
+	"D) Plastic pollution"
+  ],
+  "correct_answer": "D",
+  "explanation": "Plastic pollution does not directly threaten coral reefs, but it can contribute to other threats, such as climate change and overfishing."
+},
+{
+  "_id": {
+	"$oid": "66da46109cc81f17a9d83c7f"
+  },
+  "sr_no": 7,
+  "ocean_id": 1,
+  "question_text": "Which of the following is the largest ocean cleanup project in history?",
+  "answers": [
+	"A) The Great Pacific Garbage Patch",
+	"B) The Ocean Cleanup Project",
+	"C) The SeaCleaners",
+	"D) The Plastic Tide"
+  ],
+  "correct_answer": "B",
+  "explanation": "The Ocean Cleanup Project is the largest ocean cleanup project in history, with a goal of removing 90% of the plastic in the Great Pacific Garbage Patch by 2040."
+},
+{
+  "_id": {
+	"$oid": "66da46109cc81f17a9d83c80"
+  },
+  "sr_no": 8,
+  "ocean_id": 1,
+  "question_text": "Which of the following is not a type of ocean acidification mitigation strategy?",
+  "answers": [
+	"A) Reducing our use of fossil fuels",
+	"B) Investing in renewable energy",
+	"C) Protecting marine habitats",
+	"D) Using more sustainable fishing practices"
+  ],
+  "correct_answer": "C",
+  "explanation": "Protecting marine habitats is not a type of ocean acidification mitigation strategy, but it can help to reduce other forms of ocean pollution."
+},
+{
+  "_id": {
+	"$oid": "66da46109cc81f17a9d83c81"
+  },
+  "sr_no": 9,
+  "ocean_id": 1,
+  "question_text": "Which of the following is the most important thing you can do to help reduce ocean pollution?",
+  "answers": [
+	"A) Reduce your use of plastics",
+	"B) Recycle more",
+	"C) Support environmental organizations",
+	"D) All of the above"
+  ],
+  "correct_answer": "D",
+  "explanation": "Reducing your use of plastics, recycling more, and supporting environmental organizations are all important things you can do to help reduce ocean pollution."
+},
+{
+  "_id": {
+	"$oid": "66da46109cc81f17a9d83c82"
+  },
+  "sr_no": 10,
+  "ocean_id": 1,
+  "question_text": "What is the largest threat to the ocean today?",
+  "answers": [
+	"A) Climate change",
+	"B) Overfishing",
+	"C) Pollution",
+	"D) All of the above"
+  ],
+  "correct_answer": "D",
+  "explanation": "Climate change, overfishing, and pollution are all major threats to the ocean today. Together, they are causing the ocean to become warmer, more acidic, and less healthy."
+}]

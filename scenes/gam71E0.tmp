@@ -1,0 +1,293 @@
+[gd_scene load_steps=23 format=3 uid="uid://ctaxwmojx1qex"]
+
+[ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_ca0w5"]
+[ext_resource type="Texture2D" uid="uid://c1f1lr68r31ln" path="res://assets/Background/Clouds 5/1.png" id="1_paida"]
+[ext_resource type="Texture2D" uid="uid://df85xciw6xfco" path="res://assets/Background/Clouds 5/2.png" id="2_88hnu"]
+[ext_resource type="Texture2D" uid="uid://bf3fjtiurw51n" path="res://assets/Background/Clouds 5/3.png" id="3_x5yp4"]
+[ext_resource type="Texture2D" uid="uid://g6lfvvpu80ey" path="res://assets/Background/Clouds 5/4.png" id="4_uyelr"]
+[ext_resource type="Texture2D" uid="uid://djq0mgtta5wvm" path="res://assets/Background/Clouds 5/5.png" id="5_kabx1"]
+[ext_resource type="Texture2D" uid="uid://cwvidauov071m" path="res://assets/Background/Ocean.png" id="6_271i4"]
+[ext_resource type="SpriteFrames" uid="uid://cwl1fepm7dwy3" path="res://animations/pirateSpriteFrames.tres" id="6_upiov"]
+[ext_resource type="Texture2D" uid="uid://dy8ylvxficj4s" path="res://assets/Ships/pirateShip.png" id="9_2m5yx"]
+[ext_resource type="Theme" uid="uid://bixbbkge6crpj" path="res://themes/gameTheme.tres" id="10_oah7s"]
+[ext_resource type="Texture2D" uid="uid://nlqn068cqig4" path="res://assets/GUI/globe.png" id="11_4o2t6"]
+[ext_resource type="Texture2D" uid="uid://d15vj1u1pe83p" path="res://assets/GUI/horizontal bars/least rounded/progress bar least rounded progress dark grey.png" id="11_xmdw0"]
+[ext_resource type="Texture2D" uid="uid://c3w40u4a21rvp" path="res://assets/GUI/globe-grey.png" id="12_t8hwi"]
+[ext_resource type="FontFile" uid="uid://cex0tl5b8npu3" path="res://assets/Fonts/ThaleahFat.ttf" id="15_gshvb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fac3l"]
+size = Vector2(1050, 974.998)
+
+[sub_resource type="Animation" id="Animation_llwmh"]
+length = 0.001
+
+[sub_resource type="Animation" id="Animation_6lblu"]
+resource_name = "shipRock"
+length = 0.2
+loop_mode = 2
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_255ui"]
+_data = {
+"RESET": SubResource("Animation_llwmh"),
+"shipRock": SubResource("Animation_6lblu")
+}
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ufw5n"]
+bg_color = Color(0.969137, 0.969137, 0.969137, 1)
+expand_margin_top = 10.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_x3u20"]
+texture = ExtResource("11_xmdw0")
+
+[sub_resource type="Theme" id="Theme_po006"]
+ProgressBar/styles/background = SubResource("StyleBoxFlat_ufw5n")
+ProgressBar/styles/fill = SubResource("StyleBoxTexture_x3u20")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yeape"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0.8, 0.8, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_left = 10.0
+expand_margin_right = 10.0
+
+[node name="Game" type="Node2D"]
+
+[node name="GameManager" type="Node" parent="."]
+script = ExtResource("1_ca0w5")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="layerOne" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(1280, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/layerOne"]
+position = Vector2(640, 360)
+scale = Vector2(2.3, 2.3)
+texture = ExtResource("1_paida")
+
+[node name="layerTwo" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(1280, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/layerTwo"]
+position = Vector2(640, 360)
+scale = Vector2(2.3, 2.3)
+texture = ExtResource("2_88hnu")
+
+[node name="layerThree" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(1280, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/layerThree"]
+position = Vector2(640, 360)
+scale = Vector2(2.3, 2.3)
+texture = ExtResource("3_x5yp4")
+
+[node name="layerFour" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(1280, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/layerFour"]
+position = Vector2(640, 360)
+scale = Vector2(2.3, 2.3)
+texture = ExtResource("4_uyelr")
+
+[node name="layerFive" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(1280, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/layerFive"]
+position = Vector2(640, 360)
+scale = Vector2(2.3, 2.3)
+texture = ExtResource("5_kabx1")
+
+[node name="layerSix" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(1280, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/layerSix"]
+position = Vector2(640, 360)
+scale = Vector2(1.02, 1.02)
+texture = ExtResource("6_271i4")
+
+[node name="Pirate" type="CharacterBody2D" parent="."]
+position = Vector2(600, 184)
+scale = Vector2(0.24, 0.24)
+motion_mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pirate"]
+position = Vector2(-300, -187.5)
+shape = SubResource("RectangleShape2D_fac3l")
+
+[node name="PirateShip" type="Sprite2D" parent="Pirate"]
+z_index = 5
+position = Vector2(-275, -125)
+scale = Vector2(1.24999, 1.24999)
+texture = ExtResource("9_2m5yx")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Pirate/PirateShip"]
+z_as_relative = false
+position = Vector2(220, 100)
+scale = Vector2(0.800003, 0.800003)
+sprite_frames = ExtResource("6_upiov")
+animation = &"pirateIdle"
+autoplay = "pirateIdle"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Pirate"]
+libraries = {
+"": SubResource("AnimationLibrary_255ui")
+}
+
+[node name="Camera2D" type="Camera2D" parent="Pirate"]
+position = Vector2(-2500, -600)
+scale = Vector2(2.08334, 2.41667)
+offset = Vector2(640, 320)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="questionPanel" type="Panel" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -584.0
+offset_top = -80.0
+offset_right = 416.0
+offset_bottom = 120.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.92, 0.92)
+theme = ExtResource("10_oah7s")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/questionPanel"]
+custom_minimum_size = Vector2(1000, 200)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -489.13
+offset_top = -89.1304
+offset_right = 510.87
+offset_bottom = 123.87
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.979, 0.897)
+alignment = 1
+
+[node name="questionText" type="Label" parent="CanvasLayer/questionPanel/VBoxContainer"]
+custom_minimum_size = Vector2(1000, 200)
+layout_mode = 2
+size_flags_vertical = 6
+theme = ExtResource("10_oah7s")
+theme_type_variation = &"HeaderMedium"
+text = "The Norman Conquest fundamentally changed English society, as the Normans replaced much of the Anglo-Saxon elite with Norman nobles and instituted many changes in law, language, and governance. Over time, the Anglo-Saxon and Norman cultures fused, creating a new English identity."
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Options" type="Node" parent="CanvasLayer"]
+
+[node name="optionA" type="Button" parent="CanvasLayer/Options"]
+custom_minimum_size = Vector2(448, 0)
+offset_left = 56.0
+offset_top = 480.0
+offset_right = 504.0
+offset_bottom = 512.0
+theme = ExtResource("10_oah7s")
+theme_type_variation = &"FlatButton"
+text = "A. THIS OPTION IS CORRECT"
+
+[node name="optionB" type="Button" parent="CanvasLayer/Options"]
+custom_minimum_size = Vector2(448, 0)
+offset_left = 56.0
+offset_top = 594.0
+offset_right = 504.0
+offset_bottom = 626.0
+theme = ExtResource("10_oah7s")
+theme_type_variation = &"FlatButton"
+text = "B. THIS OPTION IS INCORRECT"
+
+[node name="optionC" type="Button" parent="CanvasLayer/Options"]
+custom_minimum_size = Vector2(448, 0)
+offset_left = 528.0
+offset_top = 480.0
+offset_right = 976.0
+offset_bottom = 512.0
+theme = ExtResource("10_oah7s")
+theme_type_variation = &"FlatButton"
+text = "c. THIS OPTION IS INCORRECT"
+
+[node name="optionD" type="Button" parent="CanvasLayer/Options"]
+custom_minimum_size = Vector2(448, 0)
+offset_left = 528.0
+offset_top = 595.0
+offset_right = 976.0
+offset_bottom = 627.0
+theme = ExtResource("10_oah7s")
+theme_type_variation = &"FlatButton"
+text = "D. THIS OPTION IS INCORRECT"
+
+[node name="globe" type="Sprite2D" parent="CanvasLayer"]
+z_index = 5
+position = Vector2(1184, 648)
+scale = Vector2(0.56, 0.56)
+texture = ExtResource("11_4o2t6")
+
+[node name="globeGrey" type="Sprite2D" parent="CanvasLayer"]
+z_index = 5
+position = Vector2(1184, 56)
+scale = Vector2(0.48, 0.48)
+texture = ExtResource("12_t8hwi")
+
+[node name="pollutionBar" type="ProgressBar" parent="CanvasLayer"]
+texture_filter = 1
+offset_left = 1160.0
+offset_top = 640.0
+offset_right = 1200.0
+offset_bottom = 680.0
+rotation = -1.5708
+scale = Vector2(14, 1)
+theme = SubResource("Theme_po006")
+value = 100.0
+rounded = true
+show_percentage = false
+
+[node name="Timer" type="Panel" parent="CanvasLayer"]
+offset_left = 32.0
+offset_top = 16.0
+offset_right = 72.0
+offset_bottom = 56.0
+scale = Vector2(1.36, 1.36)
+theme_override_styles/panel = SubResource("StyleBoxFlat_yeape")
+
+[node name="timerLabel" type="Label" parent="CanvasLayer/Timer"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.5
+offset_top = -11.5
+offset_right = 20.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("15_gshvb")
+theme_override_font_sizes/font_size = 20
+text = "00:00"
+horizontal_alignment = 1
+
+[node name="Timer" type="Timer" parent="CanvasLayer/Timer"]
+
+[connection signal="pressed" from="CanvasLayer/Options/optionA" to="GameManager" method="_on_option_a_pressed"]
+[connection signal="pressed" from="CanvasLayer/Options/optionB" to="GameManager" method="_on_option_b_pressed"]
+[connection signal="pressed" from="CanvasLayer/Options/optionC" to="GameManager" method="_on_option_c_pressed"]
+[connection signal="pressed" from="CanvasLayer/Options/optionD" to="GameManager" method="_on_option_d_pressed"]
+[connection signal="timeout" from="CanvasLayer/Timer/Timer" to="GameManager" method="_on_timer_timeout"]

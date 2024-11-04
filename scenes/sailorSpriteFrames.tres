@@ -1,0 +1,95 @@
+[gd_resource type="SpriteFrames" load_steps=14 format=3 uid="uid://reu5ifgcodli"]
+
+[ext_resource type="Texture2D" uid="uid://pvj6o66jbyla" path="res://assets/Characters/Sailor/sailor_256-sheet.png" id="1_u4c2v"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r45yn"]
+atlas = ExtResource("1_u4c2v")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6eqy1"]
+atlas = ExtResource("1_u4c2v")
+region = Rect2(256, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nmalh"]
+atlas = ExtResource("1_u4c2v")
+region = Rect2(512, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sh0x3"]
+atlas = ExtResource("1_u4c2v")
+region = Rect2(768, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xblsn"]
+atlas = ExtResource("1_u4c2v")
+region = Rect2(1024, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bc332"]
+atlas = ExtResource("1_u4c2v")
+region = Rect2(1280, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ongt6"]
+atlas = ExtResource("1_u4c2v")
+region = Rect2(1536, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q8ut2"]
+atlas = ExtResource("1_u4c2v")
+region = Rect2(1792, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ico5"]
+atlas = ExtResource("1_u4c2v")
+region = Rect2(2048, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5u5oe"]
+atlas = ExtResource("1_u4c2v")
+region = Rect2(2304, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t4xhe"]
+atlas = ExtResource("1_u4c2v")
+region = Rect2(2560, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oa4vx"]
+atlas = ExtResource("1_u4c2v")
+region = Rect2(2816, 0, 256, 256)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r45yn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6eqy1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nmalh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sh0x3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xblsn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bc332")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ongt6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q8ut2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ico5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5u5oe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t4xhe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oa4vx")
+}],
+"loop": true,
+"name": &"sailorIdle",
+"speed": 10.0
+}]

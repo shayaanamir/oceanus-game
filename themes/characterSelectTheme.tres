@@ -1,0 +1,58 @@
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://dvcngdxpnoaho"]
+
+[ext_resource type="FontFile" uid="uid://cex0tl5b8npu3" path="res://assets/Fonts/ThaleahFat.ttf" id="1_tlqc8"]
+[ext_resource type="StyleBox" uid="uid://bdbqgy0ovwlh5" path="res://themes/characterSelect.tres" id="2_kh262"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lhamr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bo5u5"]
+bg_color = Color(0.0987886, 0.127551, 0.541936, 0.368627)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+expand_margin_left = 30.0
+expand_margin_top = 30.0
+expand_margin_right = 30.0
+expand_margin_bottom = 30.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qss7j"]
+bg_color = Color(0.129412, 0.164706, 0.658824, 0.568627)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+expand_margin_left = 30.0
+expand_margin_top = 30.0
+expand_margin_right = 30.0
+expand_margin_bottom = 30.0
+
+[resource]
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/font_sizes/font_size = 72
+Button/fonts/font = ExtResource("1_tlqc8")
+Button/styles/focus = SubResource("StyleBoxEmpty_lhamr")
+Button/styles/hover = SubResource("StyleBoxFlat_bo5u5")
+Button/styles/hover_pressed = SubResource("StyleBoxFlat_bo5u5")
+Button/styles/normal = ExtResource("2_kh262")
+Button/styles/pressed = SubResource("StyleBoxFlat_qss7j")
+HeaderLarge/colors/font_outline_color = Color(0, 0, 0, 1)
+HeaderLarge/constants/outline_size = 50
+HeaderLarge/font_sizes/font_size = 100
+HeaderLarge/fonts/font = ExtResource("1_tlqc8")
+HeaderSmall/constants/outline_size = 10
+HeaderSmall/font_sizes/font_size = 30
+HeaderSmall/fonts/font = ExtResource("1_tlqc8")
+PanelContainer/styles/panel = ExtResource("2_kh262")
+RichTextLabel/font_sizes/normal_font_size = 100
+RichTextLabel/fonts/normal_font = ExtResource("1_tlqc8")

@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://b8b2r7nqi4glx"
+
+[deps]
+
+files=["res://data/ocean_game.questions.sr.translation", "res://data/ocean_game.questions.ocean.translation", "res://data/ocean_game.questions.question.translation", "res://data/ocean_game.questions.answers[0].translation", "res://data/ocean_game.questions.answers[1].translation", "res://data/ocean_game.questions.answers[2].translation", "res://data/ocean_game.questions.answers[3].translation", "res://data/ocean_game.questions.correct.translation", "res://data/ocean_game.questions.explanation.translation"]
+
+source_file="res://data/ocean_game.questions.csv"
+dest_files=["res://data/ocean_game.questions.sr.translation", "res://data/ocean_game.questions.ocean.translation", "res://data/ocean_game.questions.question.translation", "res://data/ocean_game.questions.answers[0].translation", "res://data/ocean_game.questions.answers[1].translation", "res://data/ocean_game.questions.answers[2].translation", "res://data/ocean_game.questions.answers[3].translation", "res://data/ocean_game.questions.correct.translation", "res://data/ocean_game.questions.explanation.translation"]
+
+[params]
+
+compress=true
+delimiter=0

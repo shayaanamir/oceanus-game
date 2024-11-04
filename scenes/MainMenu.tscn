@@ -1,0 +1,210 @@
+[gd_scene load_steps=11 format=3 uid="uid://dnfa55o6pu8rh"]
+
+[ext_resource type="Texture2D" uid="uid://cdvceso6monsl" path="res://assets/Background/background.jpg" id="1_6pcpq"]
+[ext_resource type="Script" path="res://scenes/main_menu.gd" id="2_0pm0y"]
+[ext_resource type="Theme" uid="uid://dlbur0a2cpxsc" path="res://themes/MainMenu.tres" id="2_p67sl"]
+[ext_resource type="FontFile" uid="uid://cex0tl5b8npu3" path="res://assets/Fonts/ThaleahFat.ttf" id="2_yj7ku"]
+[ext_resource type="Theme" uid="uid://dvcngdxpnoaho" path="res://themes/characterSelectTheme.tres" id="3_i42sm"]
+[ext_resource type="SpriteFrames" uid="uid://cwl1fepm7dwy3" path="res://animations/pirateSpriteFrames.tres" id="6_i4j58"]
+[ext_resource type="SpriteFrames" uid="uid://b57byjk8mmqfe" path="res://animations/navySpriteFrames.tres" id="7_u7vty"]
+[ext_resource type="SpriteFrames" uid="uid://reu5ifgcodli" path="res://scenes/sailorSpriteFrames.tres" id="8_05d8w"]
+[ext_resource type="SpriteFrames" uid="uid://ccg21p13n1srm" path="res://scenes/sealSpriteFrames.tres" id="9_bdo3w"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eovlb"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("1_6pcpq")
+
+[node name="mainMenu" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1282.0
+offset_bottom = 718.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_eovlb")
+script = ExtResource("2_0pm0y")
+
+[node name="startButton" type="Button" parent="mainMenu"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -48.0
+offset_top = -15.5
+offset_right = 48.0
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_p67sl")
+text = "START GAME"
+
+[node name="characterSelect" type="Panel" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 1282.0
+offset_bottom = 718.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_eovlb")
+
+[node name="Header" type="Label" parent="characterSelect"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme = ExtResource("3_i42sm")
+theme_type_variation = &"HeaderLarge"
+theme_override_fonts/font = ExtResource("2_yj7ku")
+theme_override_font_sizes/font_size = 100
+text = "SELECT A CHARACTER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="pirateContainer" type="Button" parent="characterSelect"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 304.0
+offset_top = -231.0
+offset_right = 604.0
+offset_bottom = 69.0
+grow_vertical = 2
+scale = Vector2(0.84, 0.84)
+theme = ExtResource("3_i42sm")
+
+[node name="pirateSprite" type="AnimatedSprite2D" parent="characterSelect/pirateContainer"]
+position = Vector2(150, 106)
+sprite_frames = ExtResource("6_i4j58")
+animation = &"pirateIdle"
+autoplay = "pirateIdle"
+
+[node name="pirateSubtitle" type="Label" parent="characterSelect/pirateContainer/pirateSprite"]
+offset_left = -75.0
+offset_top = 117.0
+offset_right = 80.0
+offset_bottom = 176.0
+theme = ExtResource("3_i42sm")
+theme_type_variation = &"HeaderSmall"
+text = "Pirate
+Indian Ocean"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="navyContainer" type="Button" parent="characterSelect"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -554.0
+offset_top = -239.0
+offset_right = -254.0
+offset_bottom = 61.0
+grow_horizontal = 0
+grow_vertical = 2
+scale = Vector2(0.855885, 0.855885)
+theme = ExtResource("3_i42sm")
+
+[node name="navySprite" type="AnimatedSprite2D" parent="characterSelect/navyContainer"]
+position = Vector2(150, 106)
+sprite_frames = ExtResource("7_u7vty")
+animation = &"navyIdle"
+autoplay = "navyIdle"
+frame_progress = 0.369198
+
+[node name="navySubtitle" type="Label" parent="characterSelect/navyContainer/navySprite"]
+offset_left = -75.0
+offset_top = 117.0
+offset_right = 80.0
+offset_bottom = 176.0
+theme = ExtResource("3_i42sm")
+theme_type_variation = &"HeaderSmall"
+text = "Navy Captain
+Pacific Ocean"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="sailorContainer" type="Button" parent="characterSelect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -337.0
+offset_top = 81.0
+offset_right = -37.0
+offset_bottom = 381.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.839999, 0.839999)
+theme = ExtResource("3_i42sm")
+
+[node name="sailorSprite" type="AnimatedSprite2D" parent="characterSelect/sailorContainer"]
+position = Vector2(150, 106)
+sprite_frames = ExtResource("8_05d8w")
+animation = &"sailorIdle"
+autoplay = "sailorIdle"
+frame_progress = 0.493903
+
+[node name="sailorSubtitle" type="Label" parent="characterSelect/sailorContainer/sailorSprite"]
+offset_left = -89.0
+offset_top = 117.0
+offset_right = 102.0
+offset_bottom = 176.0
+theme = ExtResource("3_i42sm")
+theme_type_variation = &"HeaderSmall"
+text = "Sailor
+Atlantic Ocean"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="sealContainer" type="Button" parent="characterSelect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 87.0001
+offset_top = 81.0
+offset_right = 387.0
+offset_bottom = 381.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.839999, 0.839999)
+theme = ExtResource("3_i42sm")
+
+[node name="sealSprite" type="AnimatedSprite2D" parent="characterSelect/sealContainer"]
+position = Vector2(150, 106)
+sprite_frames = ExtResource("9_bdo3w")
+animation = &"sealIdle"
+autoplay = "sealIdle"
+frame_progress = 0.475139
+
+[node name="sealSubtitle" type="Label" parent="characterSelect/sealContainer/sealSprite"]
+offset_left = -89.0
+offset_top = 117.0
+offset_right = 102.0
+offset_bottom = 176.0
+theme = ExtResource("3_i42sm")
+theme_type_variation = &"HeaderSmall"
+text = "Seal
+Arctic Ocean"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="mainMenu/startButton" to="mainMenu" method="_on_start_button_pressed"]
+[connection signal="pressed" from="characterSelect/pirateContainer" to="mainMenu" method="_on_pirate_container_pressed"]

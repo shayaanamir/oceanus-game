@@ -1,0 +1,74 @@
+[gd_resource type="SpriteFrames" load_steps=11 format=3 uid="uid://b57byjk8mmqfe"]
+
+[ext_resource type="Texture2D" uid="uid://ceehhqepwkif1" path="res://assets/Characters/Navy Captain/navyCaptain_256-sheet.png" id="1_oglur"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b4u7i"]
+atlas = ExtResource("1_oglur")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0i6ve"]
+atlas = ExtResource("1_oglur")
+region = Rect2(256, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5b0be"]
+atlas = ExtResource("1_oglur")
+region = Rect2(512, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vrfwh"]
+atlas = ExtResource("1_oglur")
+region = Rect2(768, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pm7k7"]
+atlas = ExtResource("1_oglur")
+region = Rect2(1024, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_13qqx"]
+atlas = ExtResource("1_oglur")
+region = Rect2(1280, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_enxom"]
+atlas = ExtResource("1_oglur")
+region = Rect2(1536, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_evthh"]
+atlas = ExtResource("1_oglur")
+region = Rect2(1792, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1abv0"]
+atlas = ExtResource("1_oglur")
+region = Rect2(2048, 0, 256, 256)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b4u7i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0i6ve")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5b0be")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vrfwh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pm7k7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_13qqx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_enxom")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_evthh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1abv0")
+}],
+"loop": true,
+"name": &"navyIdle",
+"speed": 10.0
+}]
